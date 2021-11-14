@@ -16,13 +16,12 @@ class FirstFragment: Fragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         root = inflater.inflate(R.layout.first_fragment, container, false)
 
-        val toSecondButton = root.findViewById<Button>(R.id.toSecond)
+        val toSecondButton = root.findViewById<Button>(R.id.bnToSecond)
         toSecondButton.setOnClickListener {
             it.findNavController().navigate(
                 R.id.first_to_second
             )
         }
-
         return root
     }
 }

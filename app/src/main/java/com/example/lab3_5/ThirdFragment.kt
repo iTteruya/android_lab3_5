@@ -16,12 +16,12 @@ class ThirdFragment: Fragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         root = inflater.inflate(R.layout.third_fragment, container, false)
 
-        val toSecondButton = root.findViewById<Button>(R.id.toSecond)
+        val toSecondButton = root.findViewById<Button>(R.id.bnToSecond)
         toSecondButton.setOnClickListener {
             it.findNavController().navigateUp()
         }
 
-        val toFirstButton = root.findViewById<Button>(R.id.toFirst)
+        val toFirstButton = root.findViewById<Button>(R.id.bnToFirst)
         toFirstButton.setOnClickListener {
             it.findNavController().popBackStack(R.id.firstFrag, false)
         }

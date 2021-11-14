@@ -35,14 +35,14 @@
     </fragment>
 
     <activity
-        android:id="@+id/about"
+        android:id="@+id/aboutActivity"
         android:name="com.example.lab3_5.AboutActivity"
         android:label="about_activity"
-        tools:layout="@layout/act_about"/>
+        tools:layout="@layout/activity_about"/>
 
     <action
         android:id="@+id/toAbout"
-        app:destination="@id/about"/>
+        app:destination="@id/nav_view"/>
 
 
 </navigation>
